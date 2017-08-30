@@ -1,0 +1,38 @@
+{
+  "event": {
+    "commonEventHeader": {
+         "version":"3.0",
+         "domain":"fault",
+         "eventName":"fault_DCAE",
+         "eventId":"Unique ID (decided by Dev)",  
+         "eventType":"applicationVnf",
+         "nfNamingCode":"tvpr",
+         "nfcNamingCode":"fwl",
+         "sourceId":"Device UUID of source device from FIDB",
+         "sourceName":"zakr1atvpr00fwl001",
+         "priority":"Normal",
+         "reportingEntityId":"Device UUID of reporting device from FIDB",
+         "reportingEntityName":"zakr1atvpr00fwl001",
+         "startEpochMicrosec":"1488304410000000",
+         "lastEpochMicrosec":"1488304410000000",
+         "sequence": "0",
+          "internalHeaderFields": { 
+	         "firstDateTime":"Sun, 24 Jul 2016 07:58:30 +0000", 
+                           "lastDateTime":"Sun, 24 Jul 2016 07:58:30 +0000",
+	          "inMaint":"false",
+	          "provStatus":"PROV",
+			  "equipmentNameCode":"db171b8f-115c-4992-a2e3-ee04cae357e0",
+			  "equipmentType":"VIPR",
+			  "equipmentVendor":"Palo Alto"},					
+     "faultFields": {
+             "faultFieldsVersion": "2.0",
+             "eventSeverity":"CRITICAL",
+            "eventSourceType":"virtualNetworkFunction",
+         "alarmCondition":"panHWDiskErrorsTrap",
+         "specificProblem":"Hard drive disk error", 
+         "vfStatus": "Active",
+         "alarmAdditionalInformation": [{
+"name": "ALARM_TEXT",
+"value":"panHWDiskErrorsTrap: Event type: SYSTEM, Subtype: start, Event ID: auth,Object: object,  Module: general,  Event: Hard drive disk error."}]}
+}}
+}

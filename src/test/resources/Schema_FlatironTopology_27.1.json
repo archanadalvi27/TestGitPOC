@@ -1,0 +1,136 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {},
+    "id": "http://example.com/example.json",
+    "properties": {
+        "_flatironUpdateTimeMs": {
+            "id": "/properties/_flatironUpdateTimeMs",
+            "type": "integer"
+        },
+        "alias": {
+            "id": "/properties/alias",
+            "type": "string"
+        },
+        "cdate": {
+            "id": "/properties/cdate",
+            "type": "string"
+        },
+        "class": {
+            "id": "/properties/class",
+            "type": "string"
+        },
+        "clli": {
+            "id": "/properties/clli",
+            "type": "string"
+        },
+        "communityString": {
+            "id": "/properties/communityString",
+            "type": "string"
+        },
+        "customerName": {
+            "id": "/properties/customerName",
+            "type": "string"
+        },
+        "deviceType": {
+            "id": "/properties/deviceType",
+            "type": "string"
+        },
+        "domain": {
+            "id": "/properties/domain",
+            "type": "string"
+        },
+        "entityType": {
+            "id": "/properties/entityType",
+            "type": "string"
+        },
+        "equipVendor": {
+            "id": "/properties/equipVendor",
+            "type": "string"
+        },
+        "equip_vendor_model": {
+            "id": "/properties/equip_vendor_model",
+            "type": "string"
+        },
+        "fqdn": {
+            "id": "/properties/fqdn",
+            "type": "string"
+        },
+        "functionCode": {
+            "id": "/properties/functionCode",
+            "type": "string"
+        },
+        "globalCustomerId": {
+            "id": "/properties/globalCustomerId",
+            "type": "string"
+        },
+        "inMaint": {
+            "id": "/properties/inMaint",
+            "type": "string"
+        },
+        "inmsList": {
+            "id": "/properties/inmsList",
+            "type": "string"
+        },
+        "isManaged": {
+            "id": "/properties/isManaged",
+            "type": "string"
+        },
+        "mdate": {
+            "id": "/properties/mdate",
+            "type": "string"
+        },
+        "name": {
+            "id": "/properties/name",
+            "type": "string"
+        },
+        "network": {
+            "id": "/properties/network",
+            "type": "string"
+        },
+        "oamIpv6": {
+            "id": "/properties/oamIpv6",
+            "type": "string"
+        },
+        "oid": {
+            "id": "/properties/oid",
+            "type": "string"
+        },
+        "osType": {
+            "id": "/properties/osType",
+            "type": "string"
+        },
+        "osVersion": {
+            "id": "/properties/osVersion",
+            "type": "string"
+        },
+        "provStatus": {
+            "id": "/properties/provStatus",
+            "type": "string"
+        },
+        "service": {
+            "id": "/properties/service",
+            "type": "string"
+        },
+        "serviceId": {
+            "id": "/properties/serviceId",
+            "type": "string"
+        },
+        "source": {
+            "id": "/properties/source",
+            "type": "string"
+        },
+        "transactionId": {
+            "id": "/properties/transactionId",
+            "type": "string"
+        },
+        "transactionTimeStamp": {
+            "id": "/properties/transactionTimeStamp",
+            "type": "string"
+        },
+        "uuid": {
+            "id": "/properties/uuid",
+            "type": "string"
+        }
+    },
+    "type": "object"
+}

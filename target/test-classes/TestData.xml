@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<easytest:InputTestData xmlns:easytest="urn:org:easetech:easytest:1.0"
+                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                        xsi:schemaLocation="urn:org:easetech:easytest:1.0 testDataSchema.xsd">
+    <TestMethod name="TestStatusCodeWithAuthentication">
+        <TestRecord id="1">
+            <InputData>
+                <Entry key="baseURI" value="https://dcae-msrt-mtl3-istftl.research.att.com:3905"/>
+                <Entry key="basePath" value="/events/com.att.dcae.dmaap.ISTFTL.DCAE-COLLECTOR-UCSNMP"/>
+                <Entry key="searchPath" value="ad707g/c1?limit=5"/>
+                <Entry key="authenticationUser" value="m06681@snmpTrapCollector.dcae.att.com"/>
+                <Entry key="authenticationPwd" value="0penDCAE4!"/>
+            </InputData>
+            <OutputData></OutputData>
+        </TestRecord>
+        <TestRecord id="2">
+            <InputData>
+                <Entry key="baseURI" value="https://dcae-msrt-mtl3-istftl.research.att.com:3905"/>
+                <Entry key="basePath" value="/events/com.att.dcae.dmaap.ISTFTL.OPEN-DCAE-HIGHLANDPARK-EVENT-OUTPUT"/>
+                <Entry key="searchPath" value="ad707g/c1?limit=5"/>
+                <Entry key="authenticationUser" value="m06680@highlandPark.dcae.att.com"/>
+                <Entry key="authenticationPwd" value="0penDCAE4!"/>
+            </InputData>
+            <OutputData></OutputData>
+        </TestRecord>
+        </TestMethod> 
+    <TestMethod name="TestStatusCodeWithoutAuthentication">
+        <TestRecord id="1">
+            <InputData>
+                <Entry key="baseURI" value="http://uebsb93kcdc.it.att.com:3904"/>
+                <Entry key="basePath" value="/events/UCSNMP-HEARTBEAT"/>
+                <Entry key="searchPath" value="GfpIp-Consumerzltcmtc3njcoll02.research.att.comzltcmtc3njcoll02.research.att.comzltcmtc3njcoll02.research.att.comzltcmtc3njcoll02.research.att.comzltcmtc3njcoll02.research.att.com-overland-test/0?limit=5"/>
+            </InputData>
+         <OutputData></OutputData>
+        </TestRecord>        
+        <TestRecord id="2">
+            <InputData>
+                <Entry key="baseURI" value="http://uebsb92sfdc.it.att.com:3904"/>
+                <Entry key="basePath" value="/events/UCSNMP-HEARTBEAT"/>
+                <Entry key="searchPath" value="GfpIp-Consumerzltcmtc3njcoll02.research.att.comzltcmtc3njcoll02.research.att.comzltcmtc3njcoll02.research.att.comzltcmtc3njcoll02.research.att.comzltcmtc3njcoll02.research.att.com-overland-test/0?limit=5"/>
+            </InputData>
+         <OutputData></OutputData>
+        </TestRecord>    
+        </TestMethod>
+     <TestMethod name="postJSONwithoutHeader">
+        <TestRecord id="1">
+            <InputData>
+                <Entry key="dataPostUrl" value="http://uebsb91kcdc.it.att.com:3904/events/OPEN-DCAE-HPOVERLAND-PPD-ALARM"/>
+                <Entry key="jsonFile" value="postProcessedAlarmJSON.json"/>
+            </InputData>
+            <OutputData></OutputData>
+        </TestRecord>
+      </TestMethod>
+     <TestMethod name="postJSONwithHeader">
+        <TestRecord id="1">
+            <InputData>
+                <Entry key="authenticationUser" value="m06681@snmpTrapCollector.dcae.att.com"/>
+                <Entry key="authenticationPwd" value="0penDCAE4!"/>
+                <Entry key="dataPostUrl" value="https://dcae-msrt-mtl3-istftl.research.att.com:3905/events/com.att.dcae.dmaap.ISTFTL.DCAE-COLLECTOR-UCSNMP"/>
+                <Entry key="jsonFile" value="gfpmt5pcs11.UCSNMP.RAW.json"/>
+            </InputData>
+            <OutputData></OutputData>
+        </TestRecord>     
+        <TestRecord id="2">
+            <InputData>
+                <Entry key="authenticationUser" value="m06680@highlandPark.dcae.att.com"/>
+                <Entry key="authenticationPwd" value="0penDCAE4!"/>
+                <Entry key="dataPostUrl" value="https://dcae-msrt-mtl3-istftl.research.att.com:3905/events/com.att.dcae.dmaap.ISTFTL.OPEN-DCAE-HIGHLANDPARK-EVENT-OUTPUT"/>
+                <Entry key="jsonFile" value="gfpmt5pcs11.HP.Normalized.json"/>
+            </InputData>
+            <OutputData></OutputData>
+        </TestRecord>
+      </TestMethod>
+    <TestMethod name="testSchemaGivenJson">
+        <TestRecord id="1">
+            <InputData>
+                <Entry key="JSONFilePath" value="C:\\OsCARTest\\DCAEUnitTest\\src\\test\\resources\\gfpmt5pcs11.UCSNMP.RAW.json"/>
+                <Entry key="SchemaFileName" value="Schema_CommonEventFormat_28.1.json"/>
+            </InputData>
+            <OutputData></OutputData>
+        </TestRecord>
+        <TestRecord id="2">
+             <InputData>
+                <Entry key="JSONFilePath" value="C:\\OsCARTest\\DCAEUnitTest\\src\\test\\resources\\gfpmt5pcs11.HP.Normalized.json"/>
+                <Entry key="SchemaFileName" value="Schema_VESNormalizedJSON_28.3.json"/>
+            </InputData>
+            <OutputData></OutputData>
+        </TestRecord>
+        <TestRecord id="3">
+             <InputData>
+                <Entry key="JSONFilePath" value="C:\\OsCARTest\\DCAEUnitTest\\src\\test\\resources\\flatiron_vNF.json"/>
+                <Entry key="SchemaFileName" value="Schema_FlatironTopology_27.1.json"/>
+            </InputData>
+            <OutputData></OutputData>
+        </TestRecord>
+     </TestMethod>      
+</easytest:InputTestData>

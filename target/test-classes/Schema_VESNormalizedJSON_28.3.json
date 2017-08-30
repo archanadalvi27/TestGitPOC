@@ -1,0 +1,200 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {},
+    "id": "http://example.com/example.json",
+    "properties": {
+        "event": {
+            "id": "/properties/event",
+            "properties": {
+                "commonEventHeader": {
+                    "id": "/properties/event/properties/commonEventHeader",
+                    "properties": {
+                        "domain": {
+                            "id": "/properties/event/properties/commonEventHeader/properties/domain",
+                            "type": "string"
+                        },
+                        "eventId": {
+                            "id": "/properties/event/properties/commonEventHeader/properties/eventId",
+                            "type": "string"
+                        },
+                        "eventType": {
+                            "id": "/properties/event/properties/commonEventHeader/properties/eventType",
+                            "type": "string"
+                        },
+                        "functionalRole": {
+                            "id": "/properties/event/properties/commonEventHeader/properties/functionalRole",
+                            "type": "string"
+                        },
+                        "internalHeaderFields": {
+                            "id": "/properties/event/properties/commonEventHeader/properties/internalHeaderFields",
+                            "properties": {
+                                "assetLocation": {
+                                    "id": "/properties/event/properties/commonEventHeader/properties/internalHeaderFields/properties/assetLocation",
+                                    "type": "string"
+                                },
+                                "closedLoopControlName": {
+                                    "id": "/properties/event/properties/commonEventHeader/properties/internalHeaderFields/properties/closedLoopControlName",
+                                    "type": "string"
+                                },
+                                "closedLoopFlag": {
+                                    "id": "/properties/event/properties/commonEventHeader/properties/internalHeaderFields/properties/closedLoopFlag",
+                                    "type": "string"
+                                },
+                                "collectorTimeStamp": {
+                                    "id": "/properties/event/properties/commonEventHeader/properties/internalHeaderFields/properties/collectorTimeStamp",
+                                    "type": "string"
+                                },
+                                "equipmentNameCode": {
+                                    "id": "/properties/event/properties/commonEventHeader/properties/internalHeaderFields/properties/equipmentNameCode",
+                                    "type": "string"
+                                },
+                                "equipmentType": {
+                                    "id": "/properties/event/properties/commonEventHeader/properties/internalHeaderFields/properties/equipmentType",
+                                    "type": "string"
+                                },
+                                "equipmentVendor": {
+                                    "id": "/properties/event/properties/commonEventHeader/properties/internalHeaderFields/properties/equipmentVendor",
+                                    "type": "string"
+                                },
+                                "eventSourceHostname": {
+                                    "id": "/properties/event/properties/commonEventHeader/properties/internalHeaderFields/properties/eventSourceHostname",
+                                    "type": "string"
+                                },
+                                "eventTag": {
+                                    "id": "/properties/event/properties/commonEventHeader/properties/internalHeaderFields/properties/eventTag",
+                                    "type": "string"
+                                },
+                                "firstDatetime": {
+                                    "id": "/properties/event/properties/commonEventHeader/properties/internalHeaderFields/properties/firstDatetime",
+                                    "type": "string"
+                                },
+                                "inMaint": {
+                                    "id": "/properties/event/properties/commonEventHeader/properties/internalHeaderFields/properties/inMaint",
+                                    "type": "string"
+                                },
+                                "internalHeaderFieldsVersion": {
+                                    "id": "/properties/event/properties/commonEventHeader/properties/internalHeaderFields/properties/internalHeaderFieldsVersion",
+                                    "type": "string"
+                                },
+                                "lastDatetime": {
+                                    "id": "/properties/event/properties/commonEventHeader/properties/internalHeaderFields/properties/lastDatetime",
+                                    "type": "string"
+                                },
+                                "provStatus": {
+                                    "id": "/properties/event/properties/commonEventHeader/properties/internalHeaderFields/properties/provStatus",
+                                    "type": "string"
+                                },
+                                "resourceInstanceId": {
+                                    "id": "/properties/event/properties/commonEventHeader/properties/internalHeaderFields/properties/resourceInstanceId",
+                                    "type": "string"
+                                },
+                                "serviceInstanceId": {
+                                    "id": "/properties/event/properties/commonEventHeader/properties/internalHeaderFields/properties/serviceInstanceId",
+                                    "type": "string"
+                                },
+                                "serviceInstanceName": {
+                                    "id": "/properties/event/properties/commonEventHeader/properties/internalHeaderFields/properties/serviceInstanceName",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "lastEpochMicrosec": {
+                            "id": "/properties/event/properties/commonEventHeader/properties/lastEpochMicrosec",
+                            "type": "string"
+                        },
+                        "priority": {
+                            "id": "/properties/event/properties/commonEventHeader/properties/priority",
+                            "type": "string"
+                        },
+                        "reportingEntityId": {
+                            "id": "/properties/event/properties/commonEventHeader/properties/reportingEntityId",
+                            "type": "string"
+                        },
+                        "reportingEntityName": {
+                            "id": "/properties/event/properties/commonEventHeader/properties/reportingEntityName",
+                            "type": "string"
+                        },
+                        "sequence": {
+                            "id": "/properties/event/properties/commonEventHeader/properties/sequence",
+                            "type": "string"
+                        },
+                        "sourceId": {
+                            "id": "/properties/event/properties/commonEventHeader/properties/sourceId",
+                            "type": "string"
+                        },
+                        "sourceName": {
+                            "id": "/properties/event/properties/commonEventHeader/properties/sourceName",
+                            "type": "string"
+                        },
+                        "startEpochMicrosec": {
+                            "id": "/properties/event/properties/commonEventHeader/properties/startEpochMicrosec",
+                            "type": "string"
+                        },
+                        "version": {
+                            "id": "/properties/event/properties/commonEventHeader/properties/version",
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                },
+                "faultFields": {
+                    "id": "/properties/event/properties/faultFields",
+                    "properties": {
+                        "alarmAdditionalInformation": {
+                            "id": "/properties/event/properties/faultFields/properties/alarmAdditionalInformation",
+                            "items": {
+                                "id": "/properties/event/properties/faultFields/properties/alarmAdditionalInformation/items",
+                                "properties": {
+                                    "field": {
+                                        "id": "/properties/event/properties/faultFields/properties/alarmAdditionalInformation/items/properties/field",
+                                        "properties": {
+                                            "name": {
+                                                "id": "/properties/event/properties/faultFields/properties/alarmAdditionalInformation/items/properties/field/properties/name",
+                                                "type": "string"
+                                            },
+                                            "value": {
+                                                "id": "/properties/event/properties/faultFields/properties/alarmAdditionalInformation/items/properties/field/properties/value",
+                                                "type": "string"
+                                            }
+                                        },
+                                        "type": "object"
+                                    }
+                                },
+                                "type": "object"
+                            },
+                            "type": "array"
+                        },
+                        "alarmCondition": {
+                            "id": "/properties/event/properties/faultFields/properties/alarmCondition",
+                            "type": "string"
+                        },
+                        "eventSeverity": {
+                            "id": "/properties/event/properties/faultFields/properties/eventSeverity",
+                            "type": "string"
+                        },
+                        "eventSourceType": {
+                            "id": "/properties/event/properties/faultFields/properties/eventSourceType",
+                            "type": "string"
+                        },
+                        "faultFieldsVersion": {
+                            "id": "/properties/event/properties/faultFields/properties/faultFieldsVersion",
+                            "type": "string"
+                        },
+                        "specificProblem": {
+                            "id": "/properties/event/properties/faultFields/properties/specificProblem",
+                            "type": "string"
+                        },
+                        "vfStatus": {
+                            "id": "/properties/event/properties/faultFields/properties/vfStatus",
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                }
+            },
+            "type": "object"
+        }
+    },
+    "type": "object"
+}

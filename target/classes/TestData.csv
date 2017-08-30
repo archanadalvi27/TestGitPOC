@@ -1,0 +1,2 @@
+TestStatusCodeCSV,baseURI,basePath,authenticationUser,authenticationPwd
+,https://dcae-msrt-mtl3-istftl.research.att.com:3905,/events/com.att.dcae.dmaap.ISTFTL.DCAE-COLLECTOR-UCSNMP,m06681@snmpTrapCollector.dcae.att.com,0penDCAE4!

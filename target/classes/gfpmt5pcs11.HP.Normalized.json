@@ -1,0 +1,48 @@
+{"event": {
+    "commonEventHeader": {
+        "functionalRole": "ircc",
+        "eventType": "Fault_ircc",
+        "version": "2.0",
+        "sourceId": "ircc0001vm001",
+        "reportingEntityName": "ircc0001vm001",
+        "startEpochMicrosec": "1503029476000000",
+        "lastEpochMicrosec": "1503029476000000",
+        "eventId": "bigipServiceDown-6-10:135.69.241.31:11@ircc0001vm001",
+        "sequence": "0",
+        "priority": "High",
+        "sourceName": "ircc0001vm001",
+        "domain": "fault",
+        "internalHeaderFields": {
+            "provStatus": "PROV",
+            "equipmentNameCode": "e433710f-9217-458d-a79d-1c7aff376d89",
+            "equipmentType": "VM",
+            "inMaint": "false",
+            "eventTag": "hp.AIC-SNMP-TRAPS-SECONDARY.20170818.2908871643",
+            "resourceInstanceId": "",
+            "lastDatetime": "Fri, 18 Aug 2017 04:11:16 +0000",
+            "closedLoopControlName": "",
+            "eventSourceHostname": "ircc0001vm001",
+            "assetLocation": "LSLEILAA",
+            "serviceInstanceId": "e433710f-9217-458d-a79d-1c7aff376d89",
+            "firstDatetime": "Fri, 18 Aug 2017 04:11:16 +0000",
+            "closedLoopFlag": "false",
+            "collectorTimeStamp": "Fri, 18 Aug 2017 04:11:16 +0000",
+            "equipmentVendor": "F5",
+            "serviceInstanceName": "VOIP-VUSP",
+            "internalHeaderFieldsVersion": "2.0"
+        },
+        "reportingEntityId": "ircc0001vm001"
+    },
+    "faultFields": {
+        "eventSourceType": "ircc",
+        "alarmAdditionalInformation": [{"field": {
+            "name": "ALARM_TEXT",
+            "value": "bigipServiceDown: A service is detected DOWN. Description: Pool member 192.168.47.33:161 monitor status down. Object node: 135.69.241.31. Object port: 11."
+        }}],
+        "specificProblem": "Pool member 192.168.47.33:161 monitor status down",
+        "alarmCondition": "bigipServiceDown",
+        "eventSeverity": "CRITICAL",
+        "faultFieldsVersion": "1.1",
+        "vfStatus": "Active"
+    }
+}}
